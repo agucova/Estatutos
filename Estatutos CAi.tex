@@ -1,11 +1,11 @@
 \documentclass[letterpaper,11pt]{article}
+
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+
 \usepackage[usenames,dvipsnames]{color}
 \usepackage[margin=1in]{geometry}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \usepackage{textcomp}
 \usepackage[exercise]{amsthm}
 \usepackage{hyperref}
@@ -13,6 +13,9 @@
 \usepackage{amsthm}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
+\usepackage{FiraSans}
+\usepackage[activate=true, babel=true]{microtype}
+
 \hypersetup{colorlinks= true, linkcolor=blue}
 \spanishdecimal{.}
 \tolerance=1000
@@ -36,7 +39,7 @@
 \renewcommand{\footrulewidth}{0 pt}
 \headheight=75pt
 
-\theoremstyle{plain}
+\theoremstyle{definition}%
 \newtheorem{art}{Art.} %Para que salga Art.+Nro
 \newtheorem{art_trans}{Art.}
 
@@ -60,7 +63,7 @@
 %Formalidades respecto al título, autor y fecha de modificación
 \title{Estatutos}
 \author{Centro de Alumnos de Ingeniería}
-\date{Noviembre 2015}
+\date{\today}
 %Inicio del documento
 \begin{document}
 
