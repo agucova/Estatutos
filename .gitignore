@@ -244,6 +244,10 @@ TSWLatexianTemp*
 # no subir automáticamente los cambios del PDF
 *pdf
 
+# make4ht
+/*.html
+/*.css
+
 # Otros
 .DS_STORE
 *.tmp
