@@ -1,23 +1,44 @@
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage[spanish]{babel}
+% Colores personalizables
+\usepackage[usenames,dvipsnames]{xcolor}
 
-\usepackage[usenames,dvipsnames]{color}
+% Margen de la página
 \usepackage[margin=1in]{geometry}
-\usepackage{textcomp}
-\usepackage[exercise]{amsthm}
-\usepackage{hyperref}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{fancyhdr}
-\usepackage{titlesec}
-\usepackage{FiraSans}
-\usepackage[activate=true, babel=true]{microtype}
 
+% Entorno de teoremas, usado para cada artículo. TODO: Cambiar a subsecciones
+\usepackage[exercise]{amsthm}
+
+% Links internos y externos
+\usepackage{hyperref}
+
+% Símbolos Matemáticos
+\usepackage{amsmath}
+
+% Headers y footers
+\usepackage{fancyhdr}
+
+% Reemplaza macros sobre títulos con configuración avanzada. TODO: Reemplazar a LaTeX nativo
+\usepackage{titlesec}
+
+% Lenguaje, reemplaza babel
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+
+% Tipografía
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+
+% Hace formato de forma inteligente
+\usepackage{microtype}
+
+% Desactiva advertencias de overfull
+\hbadness=10000
+
+% Configura links
 \hypersetup{colorlinks= true, linkcolor=blue}
-\spanishdecimal{.}
-\tolerance=1000
-\hyphenpenalty=1000
+
+% Geometría
 \setlength{\parindent}{0in}
 \setlength{\parskip}{0.1in}
 \setlength\textheight{8.2in}
@@ -37,11 +58,14 @@
 \renewcommand{\footrulewidth}{0 pt}
 \headheight=75pt
 
+% Entorno de teoremas, usado para artículos
 \theoremstyle{definition}%
 \newtheorem{art}{Art.} % Para que salga Art.+Nro
 \newtheorem{art_trans}{Art.}
 
-\renewcommand{\thesection}{\Roman{section}} % Enumerar secciones con números romanos
+% Números romanos en secciones
+\renewcommand{\thesection}{\Roman{section}}
+
 % Enumeraciones
 \renewcommand{\theenumi}{\Alph{enumi}}
 \renewcommand{\labelenumi}{\theenumi.}
@@ -58,7 +82,7 @@
 \makeatletter \renewcommand\p@enumiv{\theenumiii, } \makeatother
 
 % Formalidades respecto al título, autor y fecha de modificación
-\title{Estatutos}
+\title{Estatutos del Centro de Alumnos de Ingeniería}
 \author{Centro de Alumnos de Ingeniería}
 \date{\today}
 
@@ -71,9 +95,9 @@
 \begin{center}
 	\begin{Large}
 		{\bf
-			ESTATUTOS DEL CENTRO DE ALUMNOS DE INGENIERÍA
+			Estatutos del Centro de Alumnos de Ingeniería
 
-			PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE
+			Pontificia Universidad Católica de Chile
 		}
 	\end{Large}
 
@@ -123,8 +147,6 @@
 
 	\end{enumerate}
 \end{art}
-
-\newpage
 
 \begin{art}\label{organismosCAi}
 	Los organismos directivos del CAi son los siguientes:
