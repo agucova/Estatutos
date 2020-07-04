@@ -248,3 +248,6 @@ TSWLatexianTemp*
 .DS_STORE
 *.tmp
 __latexindent_temp.tex
+
+# Permitir los estatutos!
+!estatutos.pdf
